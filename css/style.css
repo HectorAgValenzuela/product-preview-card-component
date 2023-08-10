@@ -1,14 +1,14 @@
 
 :root {
-    --primary-dark-cyan: hsl(158, 36%, 37%);
-    --primary-cream: hsl(30, 38%, 92%);
+    --color-primary-400: hsl(158, 36%, 37%);
+    --color-secondary-200: hsl(30, 38%, 92%);
   
-    --neutral-dark-blue: hsl(212, 21%, 14%);
-    --neutral-grayish-blue: hsl(228, 12%, 48%);
-    --neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-900: hsl(212, 21%, 14%);
+    --clr-neutral-400: hsl(228, 12%, 48%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
 
-    --font-family-Montserrat: 'Montserrat', sans-serif;
-    --font-family-Fraunces: 'Fraunces', serif;
+    --font-family-Base: 'Montserrat', sans-serif;
+    --font-family-Accent: 'Fraunces', serif;
   
     --fw-regular: 500;
     --fw-bold: 700;
@@ -63,6 +63,13 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+  font-family: var(--font-family-Base);
+  font-weight: var(--fw-regular);
+  font-size: 0.875rem;
+  color: var(--clr-neutral-400);
+  background-color: var(--color-secondary-200);
+}
