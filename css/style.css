@@ -1,6 +1,7 @@
 
 :root {
     --color-primary-400: hsl(158, 36%, 37%);
+    --color-primary-500: hsl(158, 36%, 20%);
     --color-secondary-200: hsl(30, 38%, 92%);
   
     --clr-neutral-900: hsl(212, 21%, 14%);
@@ -97,6 +98,35 @@ body {
   width: 1px;
 }
 
+/* button */
+.button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 0.5em;
+  padding: .75em 1.5em;
+  text-decoration: none;
+
+  display: inline-flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary-400);
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-bold);
+  font-size: 0.925rem;
+}
+
+.button:is(:hover, :focus) {
+  background-color: var(--color-primary-500);
+}
+
+.button[data-icon = "shopping-cart"]::before {
+  content: "";
+  background-image: url("/images/icon-cart.svg");
+  width: 15px;
+  height: 16px;
+}
+
 /* product styles */
 .product {
   --content-padding: 1.5rem;
@@ -130,8 +160,3 @@ body {
   font-family: var(--font-family-Accent);
   color: var(--color-primary-400);
 }
-
-.product__original-price {
-  /* text-decoration: line-through; */
-}
-
