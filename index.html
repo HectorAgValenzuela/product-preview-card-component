@@ -22,9 +22,13 @@
 
   <main>
     <div class="product">
-      <section class="product__image-section">
+      <picture class="product__image-section">
+        <source 
+        srcset="/images/image-product-desktop.jpg"
+        media="(min-width: 600px)">
+
         <img src="images/image-product-mobile.jpg" alt="Image of a perfume product">
-      </section>
+      </picture>
   
       <section class="product__content-section">
         <p class="product__category">Perfume</p>
